@@ -1,39 +1,31 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# AppTheme Package
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+[![Pub Version](https://img.shields.io/pub/v/app_theme.svg)](https://pub.dev/packages/app_theme) [![Build Status](https://img.shields.io/github/actions/workflow/status/your_github_username/app_theme/build.yml)](https://github.com/your_github_username/app_theme/actions) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Overview
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+`AppTheme` is a Flutter package designed to provide a comprehensive and responsive theming solution for your Flutter applications. This package includes a variety of themes for different UI components, ensuring a consistent look and feel across your app.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- **Light Theme**: Customizable light theme for various UI components.
+- **Responsive Design**: Themes are responsive and adjust according to media query.
+- **Component Themes**: Includes themes for AppBar, BottomNavigationBar, Checkbox, ElevatedButton, FloatingActionButton, InputDecoration, OutlinedButton, RadioButton, SnackBar, Switch, TabBar, and Text.
+- **Color Scheme**: Centralized color management for a consistent color scheme across the app.
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the following to your `pubspec.yaml` file:
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  app_theme:
+    path: packages/app_theme    
 ```
+## Screenshots
 
-## Additional information
+---              |  --- 
+:-------------------------:|:-------------------------:
+![](screen_shots/Screenshot_1.jpg)  |  ![](screen_shots/Screenshot_2.jpg)
+![](screen_shots/Screenshot_3.jpg)  |  ![](screen_shots/Screenshot_4.jpg)
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
