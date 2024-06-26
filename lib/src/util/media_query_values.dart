@@ -13,6 +13,13 @@ extension MediaQueryValues on BuildContext {
     return width * (percentage / 100);
   }
 
+  double sizePercentage(double percentage) {
+    // Use the smaller dimension to calculate the size
+    double smallerDimension = width < height ? width : height;
+    // Return the size as a percentage of the smaller dimension
+    return smallerDimension * (percentage/100);
+  }
+
   /// Represents a SizedBox with height
   SizedBox hSBox(double value) {
     return SizedBox(

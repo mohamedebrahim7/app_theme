@@ -1,3 +1,4 @@
+import 'package:app_theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 import '../util/colors.dart';
@@ -7,18 +8,18 @@ class AppOutlinedButtonTheme {
   AppOutlinedButtonTheme._(); //To avoid creating instances
 
   /* -- Light Theme -- */
-  static OutlinedButtonThemeData lightOutlinedButtonTheme(double size) {
+  static OutlinedButtonThemeData lightOutlinedButtonTheme(BuildContext context) {
     return OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
         backgroundColor: AppColors.buttonSecondary,
         foregroundColor: AppColors.buttonSecondaryForeground,
         disabledBackgroundColor: AppColors.buttonDisabled,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(context.widthPercentage(4)),
         ),
         side: const BorderSide(color: AppColors.buttonSecondaryBorder),
-        textStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: size * .02),
-        minimumSize: Size.fromHeight(size * .06),
+        textStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: context.sizePercentage(5)),
+        minimumSize: Size.fromHeight(context.sizePercentage(14)),
       ),
     );
   }

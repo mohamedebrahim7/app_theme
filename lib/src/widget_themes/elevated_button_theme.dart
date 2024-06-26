@@ -1,3 +1,4 @@
+import 'package:app_theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 import '../util/colors.dart';
@@ -8,18 +9,18 @@ class AppElevatedButtonTheme {
   /* -- Light Theme -- */
 
   ///the size is given if needed to determine the font size of the text
-  static ElevatedButtonThemeData lightElevatedButtonTheme(double size) {
+  static ElevatedButtonThemeData lightElevatedButtonTheme(BuildContext context,) {
     return ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-      backgroundColor: AppColors.buttonPrimary,
-      foregroundColor: AppColors.buttonPrimaryForeground,
-      disabledBackgroundColor: AppColors.buttonDisabled,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10),
-      ),
-      textStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: size * .023),
-      minimumSize: Size.fromHeight(size * .06),
-    ));
+          backgroundColor: AppColors.buttonPrimary,
+          foregroundColor: AppColors.buttonPrimaryForeground,
+          disabledBackgroundColor: AppColors.buttonDisabled,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(context.widthPercentage(4)),
+          ),
+          textStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: context.sizePercentage(5)),
+          minimumSize: Size.fromHeight(context.sizePercentage(14)),
+        ));
   }
 }
 
